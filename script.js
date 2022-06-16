@@ -39,7 +39,7 @@ function writeText() {
     index++;
 
     if (index > text.length - 1) {
-        index = 0;
+        index = 1;  // start at 2nd letter to prevent page from buckling when there is no text
     }
 }
 

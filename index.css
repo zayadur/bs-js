@@ -119,6 +119,10 @@ section h1 {
     border-radius: 6px;
 }
 
+#text-ticker {
+    height: 33vh;   /* prevent entire page buckling when ticker is empty */
+}
+
 /* popup */
 #popup-btn {
     background: transparent;
