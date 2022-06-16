@@ -27,8 +27,7 @@ function createNotification() {
     }, 1500)
 }
 
-// auto-text
-
+// text-ticker
 const text = "lorem ipsum dolor sit amet..."
 
 let index = 0;
