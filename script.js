@@ -64,9 +64,8 @@ function createTickerImage() {
 
     tickerImage.innerText = '🚗';
 
-    const tickerLine = document.getElementById('image-ticker');
+    const tickerLine = document.getElementById('inline-image-ticker');
     tickerLine.appendChild(tickerImage);
-    // todo: print in a single line
 }
 
 const printImageTicker = setInterval(createTickerImage, 500);
@@ -86,3 +85,4 @@ bgToggle.addEventListener('click', () => {
 bgReset.addEventListener('click', () => {
     document.body.style.background = '#222222';
 });
+

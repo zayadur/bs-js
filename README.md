@@ -8,4 +8,7 @@ This is a collection of JavaScript components covering a wide variety of methods
 - toast notification
 - text ticker
 - popup or modal
+- image ticker
+- background toggle
+- 
 - ... more to come

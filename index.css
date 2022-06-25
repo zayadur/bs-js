@@ -8,9 +8,20 @@ body {
     color: white;
 }
 
+.button-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .icon {
+    background-color: #F5F5F5;
     height: 48px;
     width: 48px;
+}
+
+.icon:hover {
+    background-color: rgb(255, 255, 255, 1);
 }
 
 a {
@@ -66,14 +77,6 @@ section h1 {
 }
 
 /* hamburger */
-#hamburger-btn {
-    background: transparent;
-}
-
-#hamburger-btn:hover {
-    background-color: rgb(255, 255, 255, 0.86);
-}
-
 #hamburger-nav {
     /* flex and left */
     position: fixed;
@@ -92,14 +95,6 @@ section h1 {
 }
 
 /* toast */
-#toast-btn {
-    background: transparent;
-}
-
-#toast-btn:hover {
-    background-color: rgb(255, 255, 255, 0.86);
-}
-
 #toast-container {
     position: fixed;
     bottom: 10px;
@@ -115,18 +110,10 @@ section h1 {
 }
 
 #text-ticker {
-    height: 33vh;   /* prevent entire page buckling when ticker is empty */
+    height: 13vh;   /* prevent entire page buckling when ticker is empty */
 }
 
 /* popup */
-#popup-btn {
-    background: transparent;
-}
-
-#popup-btn:hover {
-    background-color: rgb(255, 255, 255, 0.86);
-}
-
 #popup-container {
     position: fixed;
     top: 0;
@@ -151,18 +138,15 @@ section h1 {
 }
 
 /* image-ticker */
-.ticker-image {
-    display: inline-block;
-    animation: scroll 3s ease;
+#image-ticker {
+    height: 13vh;   /* prevent entire page buckling when ticker is empty */
 }
 
-/* background-changer */
-#background-toggle,
-#background-reset {
-    background-color: rgb(255, 255, 255, 1);
+#inline-image-ticker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 33%;
 }
 
-#background-toggle:hover,
-#background-reset:hover {
-    background-color: rgb(255, 255, 255, 0.86);
-}
