@@ -8,6 +8,11 @@ body {
     color: white;
 }
 
+.icon {
+    height: 48px;
+    width: 48px;
+}
+
 a {
     color: yellow;
     text-decoration: none;
@@ -69,11 +74,6 @@ section h1 {
     background-color: rgb(255, 255, 255, 0.86);
 }
 
-.hamburger-icon {
-    height: 48px;
-    width: 48px;
-}
-
 #hamburger-nav {
     /* flex and left */
     position: fixed;
@@ -98,11 +98,6 @@ section h1 {
 
 #toast-btn:hover {
     background-color: rgb(255, 255, 255, 0.86);
-}
-
-.toast-icon {
-    height: 48px;
-    width: 48px;
 }
 
 #toast-container {
@@ -132,11 +127,6 @@ section h1 {
     background-color: rgb(255, 255, 255, 0.86);
 }
 
-.popup-icon {
-    height: 48px;
-    width: 48px;
-}
-
 #popup-container {
     position: fixed;
     top: 0;
@@ -162,5 +152,17 @@ section h1 {
 
 /* image-ticker */
 .ticker-image {
-    animation: scroll 3s linear;
+    display: inline-block;
+    animation: scroll 3s ease;
+}
+
+/* background-changer */
+#background-toggle,
+#background-reset {
+    background-color: rgb(255, 255, 255, 1);
+}
+
+#background-toggle:hover,
+#background-reset:hover {
+    background-color: rgb(255, 255, 255, 0.86);
 }

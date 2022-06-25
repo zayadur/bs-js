@@ -66,12 +66,23 @@ function createTickerImage() {
 
     const tickerLine = document.getElementById('image-ticker');
     tickerLine.appendChild(tickerImage);
-
+    // todo: print in a single line
 }
 
 const printImageTicker = setInterval(createTickerImage, 500);
 
 setTimeout(() => {
     clearInterval(printImageTicker);
-}, 5000);
+}, 1500);
 
+// background-changer
+const bgToggle = document.getElementById('background-toggle');
+const bgReset = document.getElementById('background-reset');
+
+bgToggle.addEventListener('click', () => {
+    document.body.style.background = `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%)`;
+});
+
+bgReset.addEventListener('click', () => {
+    document.body.style.background = '#222222';
+});

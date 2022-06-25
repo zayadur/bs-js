@@ -1,3 +1,6 @@
+# weird file that keeps being generated upon copying files to WSL
+*:Zone.Identifier
+
 # Logs
 logs
 *.log
