@@ -86,3 +86,17 @@ bgReset.addEventListener('click', () => {
     document.body.style.background = '#222222';
 });
 
+// theme-toggle
+
+const themeToggle = document.getElementById('theme-button');
+
+const theme = document.getElementsByTagName('link')[0];
+
+themeToggle.addEventListener('click', () => {
+    if (theme.getAttribute('href') == 'styles/dark.css') {
+        theme.setAttribute('href', 'styles/light.css');
+    } else {
+        theme.setAttribute('href', 'styles/dark.css');
+    }
+});
+
