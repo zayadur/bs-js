@@ -3,6 +3,7 @@
 }
 
 body {
+    height: 200vh;
     background-color: #222222;
     color: white;
 }
@@ -91,7 +92,6 @@ section h1 {
 }
 
 /* toast */
-
 #toast-btn {
     background: transparent;
 }
@@ -158,4 +158,9 @@ section h1 {
     width: 333px;
     border-radius: 6px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* image-ticker */
+.ticker-image {
+    animation: scroll 3s linear;
 }

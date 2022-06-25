@@ -56,3 +56,22 @@ popupOpen.addEventListener('click', () => {
 popupClose.addEventListener('click', () => {
     popupContainer.classList.remove('active');
 });
+
+// image-ticker
+function createTickerImage() {
+    const tickerImage = document.createElement('div');
+    tickerImage.classList.add('ticker-image');
+
+    tickerImage.innerText = '🚗';
+
+    const tickerLine = document.getElementById('image-ticker');
+    tickerLine.appendChild(tickerImage);
+
+}
+
+const printImageTicker = setInterval(createTickerImage, 500);
+
+setTimeout(() => {
+    clearInterval(printImageTicker);
+}, 5000);
+
