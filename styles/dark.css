@@ -153,3 +153,15 @@ section h1 {
     align-items: center;
     width: 33%;
 }
+
+/* carousel */
+.slider {
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+}

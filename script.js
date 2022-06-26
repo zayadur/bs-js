@@ -100,3 +100,30 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
+// carousel
+const slider = document.getElementById('slider');
+const slides = document.querySelector('.slides');
+
+let carouselIndex = 0;
+function transform() {
+    carouselIndex++;
+    if (carouselIndex > 2) carouselIndex = 0;
+    slides.style.transform = `translateX(-${carouselIndex * 500}px)`;
+}
+
+const carouselPrevious = document.getElementById('carousel-previous');
+const carouselNext = document.getElementById('carousel-next');
+
+carouselPrevious.addEventListener('click', () => {
+    carouselIndex--;
+    if (carouselIndex < 0) carouselIndex = 2;
+    slides.style.transform = `translateX(-${carouselIndex * 500}px)`;
+});
+
+carouselNext.addEventListener('click', () => {
+    carouselIndex++;
+    if (carouselIndex > 2) carouselIndex = 0;
+    slides.style.transform = `translateX(-${carouselIndex * 500}px)`;
+});
+
+// sound-board
