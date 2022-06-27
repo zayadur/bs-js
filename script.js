@@ -127,3 +127,43 @@ carouselNext.addEventListener('click', () => {
 });
 
 // sound-board
+const sounds = ['applause', 'boo', 'gasp', 'surprise', 'tada', 'victory', 'wrong']
+
+sounds.forEach(sound => {
+    const soundButton = document.createElement('button');
+    const audio = document.getElementById(sound);
+
+    soundButton.innerText = sound;
+
+    soundButton.addEventListener('click', () => {
+        pauseCurrentSound();
+        audio.play();
+    });
+
+    document.getElementById('sounds').appendChild(soundButton);
+})
+
+function pauseCurrentSound() {
+    sounds.forEach((sound) => {
+        const audio = document.getElementById(sound);
+        audio.pause();
+        audio.currentTime = 0;
+    });
+}
+
+// zoom-effect
+const zoomContainer = document.getElementById('zoom-container');
+const zoomImage = document.getElementById('zoom-image');
+
+zoomContainer.addEventListener('mousemove', (e) => {
+    const x = e.clientX - e.target.offsetLeft;
+    const y = e.clientY - e.target.offsetLeft;
+    
+    zoomImage.style.transformOrigin = `${x}px ${y}px`;
+    zoomImage.style.transform = "scale(2)";
+});
+
+zoomContainer.addEventListener('mouseleave', () => {
+    zoomImage.style.transformOrigin = "center center";
+    zoomImage.style.transform = "scale(1)";
+});
